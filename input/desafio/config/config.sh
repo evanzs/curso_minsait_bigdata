@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DATE="$(date --date="-0 day" "+%Y%m%d)")"
+DATE="$(date --date="-0 day" "+%Y%m%d")"
 
 
 TABLES=("cidade"  "estado"  "filial" "parceiro" "subcategoria" "categoria" "item_pedido" "produto")
