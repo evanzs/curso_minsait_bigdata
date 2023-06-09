@@ -11,15 +11,11 @@ for table in "${TABLES[@]}"
 do
     echo "navegando na estrutua de pastas."
     cd ../../raw/
-
     echo "criando a pasta $table"
     mkdir $table
-
     echo "dando permissão"
-    chmod 777 $$table
-
+    chmod 777 $table
     cd $table
-
     echo "baixando tabela $table ..."
     curl -O https://raw.githubusercontent.com/caiuafranca/dados_curso/main/$table.csv
 
